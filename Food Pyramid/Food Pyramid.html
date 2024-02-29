@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>My Food Pyramid</title>
+        <link rel="StyleSheet" href="FPstylesheet.css">
+        <script src="FPscript.js"></script>
+    </head>
+    
+    <body>
+        <h1 id="pagetitle">My Food Pyramid</h1>
+
+        <div class="container">
+
+            <div class="pyramid">
+    
+                    <div class="plevel" id="pyramid-level-1">
+                        <div class="counter">
+                            <button  onclick= "decrease(0, 'l1'), checkRecommended(0, 'l1')" type="button" class="butts 1">-</button>
+                            <p class="number" id="l1">0</counterStore></p>
+                            <button onclick= "increase(0, 'l1'), checkRecommended(0, 'l1')" type="button" class="butts 1">+</button>
+                        </div>
+                    </div>
+                    <div class="plevel" id="pyramid-level-2">
+                        <div class="counter">
+                            <button onclick= "decrease(1, 'l2'), checkRecommended(1, 'l2')" type="button" class="butts 2">-</button>
+                            <p class="number" id="l2">0</p>
+                            <button onclick= "increase(1, 'l2'), checkRecommended(1, 'l2')" type="button" class="butts 2">+</button>
+                        </div>
+                    </div> 
+                    <div class="plevel" id="pyramid-level-3">
+                        <div class="counter">
+                            <button onclick= "decrease(2, 'l3'), checkRecommended(2, 'l3')" type="button" class="butts 3">-</button>
+                            <p class="number" id="l3">0</p>
+                            <button onclick= "increase(2, 'l3'), checkRecommended(2, 'l3')" type="button" class="butts 3">+</button>
+                        </div>
+                    </div>
+                    <div class="plevel" id="pyramid-level-4">
+                        <div class="counter">
+                            <button onclick= "decrease(3, 'l4'), checkRecommended(3, 'l4')" type="button" class="butts 4">-</button>
+                            <p class="number" id="l4">0</p>
+                            <button onclick= "increase(3, 'l4'), checkRecommended(3, 'l4')" type="button" class="butts 4">+</button>
+                        </div>
+                    </div>
+                    <div class="plevel" id="pyramid-level-5">
+                        <div class="counter">
+                            <button onclick= "decrease(4, 'l5'), checkRecommended(4, 'l5')" type="button" class="butts 5">-</button>
+                            <p class="number" id="l5">0</p>
+                            <button onclick= "increase(4, 'l5'), checkRecommended(4, 'l5')" type="button" class="butts 5">+</button>
+                        </div>
+                    </div>
+                    <div class="plevel" id="pyramid-level-6">
+                        <div class="counter">
+                            <button onclick= "decrease(5, 'l6'), checkRecommended(5, 'l6')" type="button" class="butts 6">-</button>
+                            <p class="number" id="l6">0</p>
+                            <button onclick= "increase(5, 'l6'), checkRecommended(5, 'l6')" type="button" class="butts 6">+</button>
+                        </div>
+                    </div>
+    
+            </div>
+    
+            <div class="inputfields">
+                <label for="age">Age Range: </label>
+                <select name="age" id="age" value="fourplus">
+                    <option value="onetofour">1-4 years</option>
+                    <option value="fourplus" selected="selected">4+ years</option>
+                </select><br>
+                <button type="button" class="submitbutton" id="setage" onclick="setAge()">Set Age Range</button> <br>
+                <label for="date" name="date">Todays Date: </label>
+                <input type="date" id="date"> <br>
+                <button type="button" class="submitbutton" id="setdate" onclick="setDate()">Set Date</button>
+            </div>
+
+            
+        </div>
+        
+    </body>
+</html>
